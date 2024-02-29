@@ -1,0 +1,12 @@
+ int n=sc.nextInt();
+        char c=sc.next().charAt(0);
+        char h='a';
+        if(c>='a' && c<='z')
+        {
+            h=(char) ((c-'a'+n)%26+'a');
+        }
+        else if(c>='A' && c<='Z')
+        {
+            h=(char)((c-'A'+n)%26+'A');
+        }
+        System.out.println(h);
